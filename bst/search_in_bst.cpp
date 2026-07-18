@@ -1,17 +1,5 @@
 #include <iostream>
-
-class TreeNode {
-    public:
-        int val;
-        TreeNode *left;
-        TreeNode *right;
-
-        TreeNode(int val) {
-            this->val = val;
-            this->left = nullptr;
-            this->right = nullptr;
-        }
-};
+#include "tree_node.h"
 
 // Recusrive approach
 bool isKeyExistsInBstRecursive(TreeNode *root, int key) {
