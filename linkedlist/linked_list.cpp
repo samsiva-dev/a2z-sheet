@@ -105,6 +105,16 @@ class LinkedList {
             }
             std::cout << std::endl;
         }
+
+        int getSize() {
+            int size = 0;
+            ListedListNode *current = head;
+            while (current != nullptr) {
+                size++;
+                current = current->next;
+            }
+            return size;
+        }
 };
 
 int main() {
@@ -126,6 +136,8 @@ int main() {
 
     list.deleteAtBack();
     list.printLinkedList();
+
+    std::cout << "Size of linked list: " << list.getSize() << std::endl;
 
     return 0;
 }
